@@ -5,12 +5,12 @@
 <!-- This file contains the description of the ANYmal C robot. -->
 <robot name="anymal">
 
-  <mujoco>
+  <!-- <mujoco>
     <compiler
     	meshdir="meshes/"
         balanceinertia="false"
     	discardvisual="false" />
-  </mujoco>
+  </mujoco> -->
 
   <!-- add world link and joint for generating base in MJCF-->
   <!-- world link -->
@@ -1488,7 +1488,7 @@
         <child link="LH_ANKLE_pitch_link"/>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <axis xyz="0 1 0"/>
-        <limit effort="180.0" lower="-0.78539816339" upper="0.78539816339" velocity="10.0"/>
+        <limit effort="80.0" lower="-0.78539816339" upper="0.78539816339" velocity="10.0"/>
         <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <!-- ankle pitch link -->
@@ -1790,7 +1790,7 @@
         <child link="RH_ANKLE_pitch_link"/>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <axis xyz="0 1 0"/>
-        <limit effort="180.0" lower="-0.78539816339" upper="0.78539816339" velocity="10.0"/>
+        <limit effort="80.0" lower="-0.78539816339" upper="0.78539816339" velocity="10.0"/>
         <dynamics damping="0.0" friction="0.0"/>
     </joint>
     <!-- ankle pitch link -->
